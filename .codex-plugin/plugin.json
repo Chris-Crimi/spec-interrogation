@@ -1,0 +1,27 @@
+{
+  "name": "spec-interrogation",
+  "version": "1.0.0",
+  "description": "Turn a rough idea into an implementation-ready spec through adversarial conversation, then audit it for loose threads and false joins: a fresh-eyes reviewer, a conversation-versus-spec drift check, and a swarm that checks every seam.",
+  "author": {
+    "name": "Chris-Crimi",
+    "url": "https://github.com/Chris-Crimi"
+  },
+  "homepage": "https://github.com/Chris-Crimi/spec-interrogation",
+  "repository": "https://github.com/Chris-Crimi/spec-interrogation",
+  "license": "MIT",
+  "keywords": ["spec", "design-doc", "prd", "review", "audit", "planning"],
+  "skills": "./codex/skills/",
+  "interface": {
+    "displayName": "Spec Interrogation",
+    "shortDescription": "Write specs coding agents can build without asking questions.",
+    "longDescription": "Interrogate an idea like a skeptical senior engineer, then audit the spec in three passes: fresh eyes, conversation-versus-spec drift, and a per-seam swarm that catches loose threads and false joins.",
+    "developerName": "Chris-Crimi",
+    "category": "Productivity",
+    "capabilities": ["Skills"],
+    "defaultPrompt": [
+      "Poke holes in this spec.",
+      "Is this design doc ready to hand off?",
+      "Check the seams in this plan."
+    ]
+  }
+}
