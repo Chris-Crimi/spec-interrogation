@@ -43,7 +43,21 @@ non-goal), or parked (an open thread with an owner or a trigger).
 **Claude Code, by hand:** copy `skills/spec-interrogation/` into `~/.claude/skills/` (for all your
 projects) or `.claude/skills/` (for one project).
 
-Passes A and C start subagents, so they need a Claude app that can run them, such as Claude Code. In an
+**Codex, as a plugin:**
+
+```
+codex plugin marketplace add Chris-Crimi/spec-interrogation
+codex plugin add spec-interrogation@spec-interrogation
+```
+
+**Codex, by hand:** copy `codex/skills/spec-interrogation/` into `~/.codex/skills/`.
+
+The Codex version lives in `codex/skills/` and is the same method with Codex's subagent mechanics:
+auditors are spawned with `fork_turns: "none"` so they never see the conversation, and the seam swarm
+runs on a cheaper model instead of Sonnet.
+
+Passes A and C start subagents, so they need an app that can run them, such as Claude Code or Codex
+with multi-agent on (the Codex skill falls back to separate `codex exec` runs when it's off). In an
 app without subagents, interrogation and Pass B still work.
 
 ## Use
@@ -62,6 +76,9 @@ check, or after a change that touched several sections.
 - `skills/spec-interrogation/references/auditor-prompt.md`: the Pass A prompt.
 - `skills/spec-interrogation/references/seam-map-prompt.md` and `seam-auditor-prompt.md`: the Pass C
   prompts.
+- `codex/skills/spec-interrogation/`: the Codex version of all of the above.
+- `.claude-plugin/` and `.codex-plugin/` + `.agents/plugins/marketplace.json`: the plugin manifests for
+  Claude Code and Codex.
 
 ## License
 
