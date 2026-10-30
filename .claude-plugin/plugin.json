@@ -1,0 +1,12 @@
+{
+  "name": "spec-interrogation",
+  "version": "1.0.0",
+  "description": "Turn a rough idea into an implementation-ready spec through adversarial conversation, then audit it for loose threads and false joins: a fresh-eyes reviewer, a conversation-versus-spec drift check, and a Sonnet swarm that checks every seam.",
+  "author": {
+    "name": "Chris-Crimi",
+    "url": "https://github.com/Chris-Crimi"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/Chris-Crimi/spec-interrogation",
+  "keywords": ["spec", "design-doc", "prd", "review", "audit", "planning"]
+}

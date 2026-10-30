@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "spec-interrogation",
+  "description": "The spec-interrogation skill: write specs coding agents can build without asking questions.",
+  "owner": {
+    "name": "Chris-Crimi"
+  },
+  "plugins": [
+    {
+      "name": "spec-interrogation",
+      "source": "./",
+      "description": "Turn a rough idea into an implementation-ready spec through adversarial conversation, then audit it for loose threads and false joins."
+    }
+  ]
+}
